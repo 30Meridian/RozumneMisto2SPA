@@ -1,0 +1,204 @@
+@import "markup/assets/scss/vars.scss";
+
+.tables {
+  // border: 1px solid #ddd;
+  border-bottom: 0;
+
+  li {
+    // padding: 5px 0;
+  }
+}
+
+.formHead {
+  margin-top: 30px;
+}
+
+.active {
+  color: $white;
+  background: $green;
+}
+
+.investImgBlock {
+  img {
+    max-width: 100%;
+  }
+}
+
+.imgTD {
+  img {
+    max-width: 100px;
+  }
+}
+
+.investLogic {
+  img {
+    max-width: 100%;
+  }
+}
+
+.objectsList {
+  cursor: pointer;
+  &:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
+}
+
+.investPage {
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+.investImg {
+  margin-top: 20px;
+}
+
+.head {
+  display: flex;
+
+  div {
+
+    &:first-child {
+      width: 410px;
+      padding-left: 10px;
+    }
+
+    &:nth-child(2) {
+      width: 320px;
+    }
+
+    &:nth-child(3) {
+      width: 100px;
+    }
+  }
+}
+
+.objects {
+
+  li {
+    display: flex;
+
+    div {
+      padding: 3px 5px;
+      &:first-child {
+        width: 410px;
+        min-width: 410px;
+        padding-left: 10px;
+        border: 1px solid #f4f4f4;
+      }
+
+      &:nth-child(2) {
+        width: 320px;
+        min-width: 320px;
+        border: 1px solid #f4f4f4;
+        border-left: 0;
+      }
+
+      &:nth-child(3) {
+        width: 100%;
+        border: 1px solid #f4f4f4;
+      }
+    }
+  }
+}
+
+.select {
+  margin-top: 20px;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.map {
+
+  h4 {
+    margin: 35px 0 0 0;
+  }
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  li {
+    margin-left: 1px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.btnGroup {
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.btnList {
+  display: inline-block;
+
+  margin-bottom: 0;
+  padding: 6px 12px;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all .35s ease;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: $black;
+  border: 1px solid transparent;
+  border: 1px solid $black;
+  border-radius: 4px;
+  background-image: none;
+
+  font-size: $font-regular;
+  font-weight: 400;
+  line-height: 1.42857143;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  &:hover {
+    text-decoration: none;
+
+    color: $white;
+    background-color: $green;
+  }
+
+  &:focus {
+    text-decoration: none;
+
+    outline: 0;
+  }
+}
+
+.detail {
+  h2 {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+
+  src: url('../fonts/FontAwesome/fontawesome-webfont.eot');
+  src: url('../fonts/FontAwesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FontAwesome/fontawesome-webfont.woff') format('woff'),
+       url('../fonts/FontAwesome/fontawesome-webfont.svg#custom_font') format('svg');
+}
+
+@font-face {
+  font-family: 'weather';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  font-weight: 400;       // For normal width. It could has another value
+  font-style: normal;     // Also could has another value
+
+  src: url('../fonts/iconmoon/icomoon.eot');
+  src: url('../fonts/iconmoon/icomoon.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/iconmoon/icomoon.woff') format('woff'),
+       url('../fonts/iconmoon/icomoon.svg#custom_font') format('svg');
+}

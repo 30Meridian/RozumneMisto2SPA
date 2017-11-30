@@ -1,0 +1,43 @@
+@import "markup/assets/scss/vars.scss";
+
+.row {
+  display: flex;
+  overflow: hidden;
+
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.content {
+  float: left;
+  overflow: hidden;
+
+  width: 100%;
+}
+
+.contentWrap {
+  width: 100%;
+  margin-bottom: -198%;
+  padding: 20px 10px;
+  padding-bottom: 200%;
+
+  background-color: #ecf0f5;
+}
+
+.contentBox {
+  box-sizing: border-box;
+  padding: 10px;
+
+  background-color: $white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+  .contentBox {
+    padding: 10px 0;
+  }
+  .contentWrap {
+    padding: 10px 6px 20px 3px;
+    padding-bottom: 200%;
+  }
+}

@@ -1,0 +1,98 @@
+@import "markup/assets/scss/vars.scss";
+
+.files {
+  i {
+    margin-right: 5px;
+
+    color: $green;
+  }
+
+  li {
+    display: inline-block;
+
+    padding: 5px 15px;
+  }
+}
+
+.modalDetailImg{
+  position: relative;
+
+  text-align: center;
+
+  i {
+    position: absolute;
+    right: 0;
+
+    margin-top: -28px;
+
+    cursor: pointer;
+
+    color: #000;
+
+    font-size: 28px;
+  }
+
+  img {
+    max-width: 100%;
+
+    border-radius: 6px;
+  }
+}
+
+.allowed {
+  margin-bottom: 10px;
+}
+
+.addFiles {
+  margin: 15px 0;
+}
+
+.modalFiles {
+  overflow-y: auto;
+
+  height: auto;
+  max-height: 80px;
+  margin-top: 5px;
+}
+
+.modalFiles::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F5F5F5;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+
+.modalFiles::-webkit-scrollbar {
+	width: 6px;
+
+	background-color: #F5F5F5;
+}
+
+.modalFiles::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #555;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+}
+
+.modalFile {
+  margin-top: 2px;
+
+  border-bottom: 1px solid #333;
+
+  i {
+    margin-right: 4px;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  
+  .votesBtn {
+    margin-top: 10px;
+  }
+}

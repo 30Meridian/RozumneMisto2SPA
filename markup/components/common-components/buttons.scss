@@ -1,0 +1,71 @@
+@import "markup/assets/scss/vars.scss";
+
+.btnWrap {
+  margin: 20px 0;
+
+  text-align: right;
+}
+
+.btnDefault {
+  display: inline-block;
+
+  margin-bottom: 0;
+  padding: 6px 12px;
+
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: #333;
+  border: 1px solid transparent;
+  border: 1px solid #333;
+  border-color: #adadad;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: none;
+
+  font-size: em(14);
+  font-weight: 400;
+  line-height: 1.42857143;
+
+  touch-action: manipulation;
+
+  i {
+    margin-right: 4px;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    color: #fff;
+    background-color: $green;
+  }
+
+  &:focus {
+    text-decoration: none;
+
+    outline: 0;
+  }
+}
+
+.btnGroup {
+
+  .btnDefault {
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:nth-child(2) {
+
+    }
+
+    &:nth-child(3) {
+      border-radius: 0;
+    }
+
+  }
+}

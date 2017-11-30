@@ -1,0 +1,28 @@
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 10px;
+
+  li {
+    position: relative;
+    margin-left: 19px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: ">";
+      position: absolute;
+      top: 1px;
+      right: -12px;
+      color: #ccc;
+      font-size: 13px;
+    }
+  }
+}

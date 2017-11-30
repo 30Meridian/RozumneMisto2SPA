@@ -1,0 +1,52 @@
+.card {
+  border-radius: 6px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  background-color: #FFFFFF;
+  color: #252422;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cardContent {
+  padding: 15px 15px 10px 15px;
+  position: relative;
+}
+
+.cardIcon {
+  font-size: 3em;
+  text-align: center;
+}
+
+.numbers {
+  text-align: right;
+  font-size: 2em;
+
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+.cardFirst {
+  background: #b8d8d8;
+}
+
+.cardSecond {
+  background: #ff8f5e;
+}
+
+.cardThird {
+  background: #d5e5a3;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .cardContent {
+    padding: 5px;
+  }
+}

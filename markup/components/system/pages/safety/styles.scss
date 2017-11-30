@@ -1,0 +1,54 @@
+@import "markup/assets/scss/vars.scss";
+@import "markup/assets/scss/mixins.scss";
+
+.text {
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.bt {
+  margin-bottom: 20px;
+}
+
+.top {
+
+
+
+  a {
+    color: $green;
+  }
+}
+
+.bottom {
+  ul {
+    margin-top: 10px;
+  }
+}
+
+.people {
+  li {
+    display: flex;
+
+    div {
+
+      &:first-child {
+        width: 200px;
+      }
+
+      &:nth-child(2) {
+        width: 95px;
+      }
+
+      &:nth-child(3) {
+        max-width: 100px;
+      }
+    }
+  }
+}
+
+.big {
+  font-size: em(16);
+  margin-bottom: 10px;
+}

@@ -1,0 +1,270 @@
+@import "markup/assets/scss/vars.scss";
+
+.defect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  img {
+    width: 100px;
+  }
+}
+
+.simpleImg {
+  img {
+    width: 100px;
+  }
+}
+
+.defectLink {
+  color: $green;
+  text-decoration:underline;
+  text-decoration-style: dotted
+}
+
+.mapBlock {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.defectLeft {
+  display: flex;
+  align-items: center;
+}
+
+.defectNumber {
+  width: 90px;
+  text-align: center;
+}
+
+.defectMarker {
+  margin: 3px 0 0 0;
+  font-size: 13px;
+}
+
+
+.statusWrap {
+  text-align: center;
+}
+
+.defects {
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.defectText {
+  width: 420px;
+
+  a {
+    font-size: em(12);
+    margin-top: 5px;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.defectStatus {
+  display: inline-block;
+  min-width: 10px;
+  padding: 5px 10px;
+  font-size: em(12);
+  font-weight: 700;
+  line-height: 1;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.open {
+  color: $orange;
+  border-color: $orange;
+}
+
+.proccess {
+  color: $blue;
+  border-color: $blue;
+}
+
+.done {
+  color: $green;
+  border-color: $green;
+}
+
+.inWork {
+  color: #42a3df;
+  border-color: #42a3df;
+}
+
+.will {
+  color: #66CCCC;
+  border-color: #66CCCC;
+}
+
+.moderation {
+  color: #999999;
+  border-color: #999999;
+}
+
+.declined {
+  color: #FF0000;
+  border-color: #FF0000;
+}
+
+.defectImg {
+  width: 120px;
+}
+
+.List {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(244, 244, 244);
+
+  span {
+    display: inline-block;
+  }
+}
+
+.listLeft {
+  span {
+    &:first-child {
+      width: 120px;
+    }
+
+    &:nth-child(2) {
+      width: 120px;
+      text-align: center;
+    }
+    &:last-child {
+      width: 420px;
+    }
+  }
+}
+
+.statusWrap {
+  text-align: right;
+}
+
+.helpList {
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+
+  ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.socials {
+  display: flex;
+
+  img {
+    max-width: 40px;
+  }
+}
+
+
+.detailImg {
+
+  img {
+    cursor: pointer;
+    max-width: 200px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 140px;
+    max-height: 140px;
+    min-width: 140px;
+    min-height: 140px;
+    margin-bottom: 17px;
+  }
+}
+
+.modalDetailImg{
+  position: relative;
+  text-align: center;
+
+  i {
+    right: 0;
+    margin-top: -28px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 28px;
+    color: #000;
+  }
+
+  img {
+    border-radius: 6px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statusWrap {
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .defects li {
+    margin-top: 20px;
+  }
+
+  .List {
+    display: none;
+  }
+
+  .defect {
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+  }
+
+  .defectLeft {
+    flex-direction: column;
+  }
+
+  .defectImg, .defectNumber, .defectText, .statusWrap {
+    width: 100%;
+  }
+
+  .defectImg img{
+    width: auto;
+    max-width: 100%;
+  }
+
+  .defectNumber {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .defectText {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,41 @@
+@import "markup/assets/scss/vars.scss";
+
+.banner {
+
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  margin-bottom: 10px;
+}
+
+.large {
+
+  p {
+    font-size: $font-regular;
+    text-align: center;
+  }
+}
+
+.basic {
+
+  p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  i {
+    margin-right: 5px;
+    color: $green;
+    min-width: 16px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  h4 {
+    color: $green;
+    display: inline;
+  }
+}

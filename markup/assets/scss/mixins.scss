@@ -1,0 +1,40 @@
+// DON'T DELETE THIS FILE !!!!!!!!!!!!!!!
+
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+$browser-context: 14; // Default
+
+@function  em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+// You can add your own mixins here:

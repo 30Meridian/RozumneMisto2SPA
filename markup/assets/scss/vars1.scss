@@ -1,0 +1,54 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+
+
+// SYSTEM COLORS
+
+$green: #1c7cd4;
+$green-hover: blue;
+$black: #333;
+$light-black: #777777;
+$orange: #FF9933;
+$blue: #00c0ef;
+$light-green: #5cb85c;
+$dark-green: #027942;
+$dark-grey: #424753;
+$violet: #6c59b4;
+$dark-violet: #312f38;
+$azure: #2b8be3;
+$lettuce: #449d44;
+$light-orange: #f0ad4e;
+$light-red: #d9534f;
+$light-grey: #ccc;
+$white: #fff;
+
+.custom {
+  $green: #1c7cd4 !global;
+  $green-hover: blue !global;
+}
+
+
+
+// PUBLIC BUDGET TAGS COLORS
+
+$light-blue: #3cc;
+$pink: #f9c;
+$grey: hsla(0,0%,40%,.7);
+$yellow: rgba(255,204,51,.7);
+$dark-blue: #33CCCC;
+
+
+// DEFECTS TAGS
+
+
+
+// FONTS
+
+$font-extra-small: 10px;
+$font-small: 12px;
+$font-regular: 1em;
+$font-big: 16px;
+$font-large: 18px;
+$font-x-large: 24px;
+$font-xx-large: 30px;
+$font-xxx-large: 36px;

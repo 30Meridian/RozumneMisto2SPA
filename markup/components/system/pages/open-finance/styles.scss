@@ -1,0 +1,177 @@
+@import "markup/assets/scss/vars.scss";
+@import "markup/assets/scss/mixins.scss";
+
+.center {
+  text-align: center;
+}
+
+.financeForm {
+
+  select {
+    padding: 0.42em .5em;
+
+    font-size: em(13);
+  }
+
+  input[type="text"] {
+    padding: 0.56em .5em;
+
+    font-size: em(13);
+  }
+}
+
+.list {
+  display: flex;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
+
+  &:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+
+  font-size: em(13);
+
+  div {
+    border: 1px solid #f4f4f4;
+    padding: 3px 5px;
+    word-break: break-word;
+  }
+}
+
+.listAmount {
+  width: 105px;
+  min-width: 105px;
+
+  text-align: center;
+
+  div {
+    border: 0;
+  }
+}
+
+.btnSearch {
+  font-size: 12px;
+}
+
+.listDate {
+  min-width: 90px;
+}
+
+.listPayer {
+  width: 170px;
+  min-width: 170px;
+  cursor: pointer;
+  color: $green;
+}
+
+.listRecipe {
+  min-width: 165px;
+  max-width: 165px;
+  cursor: pointer;
+  color: $green;
+}
+
+.listRecipeColorBlack {
+  min-width: 150px;
+  max-width: 150px;
+  color: black;
+}
+
+.listPayerColorBlack {
+  min-width: 180px;
+  max-width: 180px;
+  color: black;
+}
+
+.listDetail {
+  cursor: pointer;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.modal {
+  li {
+    padding: 5px 0;
+    border-bottom: 1px solid #f4f4f4;
+  }
+}
+
+.listHead {
+  display: flex;
+  font-weight: bold;
+
+  div {
+    cursor: pointer;
+    border: 1px solid #f4f4f4;
+    padding: 10px 5px;
+  }
+
+  div:first-child {
+    min-width: 105px;
+
+    text-align: center;
+  }
+
+  div:nth-child(2) {
+    min-width: 90px;
+  }
+
+  div:nth-child(3){
+    min-width: 170px;
+  }
+
+  div:nth-child(4){
+    min-width: 165px;
+  }
+
+  div:nth-child(5) {
+    width: 100%;
+  }
+}
+
+.chartContainer {
+  padding-top: 20px;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.responsiveContainer {
+  margin: auto;
+  width: 100%;
+  height: 400px;
+}
+
+.customTooltip {
+  background: white;
+  padding: 12px;
+
+  p {
+    color: grey;
+  }
+  p:first-child {
+    color: black;
+  }
+
+}
+
+.sortIconChecked {
+  display: inline;
+  opacity: 1;
+}
+
+.sortIcon {
+  display: inline;
+  opacity: 0.5;
+}
+
+.sortIcon:hover {
+  opacity: 1;
+}
+
+.itemCard {
+  cursor: pointer;
+}

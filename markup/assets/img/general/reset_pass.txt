@@ -1,0 +1,36 @@
+1.POST 
+	на http://127.0.0.1:8000/api/v1/user-utils/reset-password/
+	body : 
+	{
+		"email": "user_email@ukr.net"
+	}
+
+2. З пошти користувач переходить за посиланям:
+	http://localhost:3004/index.html#/reset-password/key/96m-4p2-124252af5b9afb50c209
+	або 
+	https://rozumnemisto.org/reset-password/key/96m-4p2-124252af5b9afb50c209
+ключ завжди різний.
+
+за цим посилання треба зробити форму з полями для пароля та підтвердження пароля
+
+3. Форму відображати тільки, якщо токен валідний. Для перевірки токена:
+	POST 
+	http://127.0.0.1:8000/api/v1/user-utils/reset-password/check_token/
+	body:
+	{
+		"token": "96m-4p2-fad5cfddc7b507405ca9"
+	}
+   	повертає: 
+	is_valid: true або false
+4. Для зміни пароля:
+POST 
+на http://127.0.0.1:8000/api/v1/user-utils/reset-password/new/
+	body:
+	{
+	"password1": "gqeqwew112",
+	"password2": "gqeqwew112", 
+	"token": "96m-4p2-124252af5b9afb50c209"
+	}
+повертає: token - автентифікаційний в РМ2
+або JSON з password1 або password2 де вказується валідаційне повідомлення
+

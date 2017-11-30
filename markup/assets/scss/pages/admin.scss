@@ -1,0 +1,60 @@
+.inner-fluid {
+	width: 100%;
+}
+
+.admin-page {
+
+	.ui.vertical.menu {
+		min-width: 230px;
+	}
+
+	.ui.vertical.menu .item {
+		padding: 15px 10px;
+	}
+
+	.ui.vertical.menu .item .fa {
+		font-size: 15px;
+	}
+}
+
+.text-blue {
+	color: $blue;
+}
+
+.text-green {
+	color: $green;
+}
+
+.text-yellow {
+	color: #f39c12;
+}
+
+.text-purple {
+	color: #605ca8;
+}
+
+.admin-wrapper {
+	display: flex;
+}
+
+.admin-content {
+	margin-top: -16px;
+	width: 100%;
+}
+
+.col-sidebar {
+	min-height: calc(100vh - 91px);
+	background-color: #fff;
+}
+
+.content-admin {
+	width: 100%;
+	background-color: #ecf0f5;
+	// padding: 20px 10px;
+	box-sizing: border-box;
+	min-height: calc(100vh - 91px);
+
+	.content {
+		margin: 20px 0;
+	}
+}

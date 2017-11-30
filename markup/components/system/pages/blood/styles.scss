@@ -1,0 +1,91 @@
+@import "markup/assets/scss/vars.scss";
+@import "markup/assets/scss/mixins.scss";
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.img {
+  max-width: 300px;
+}
+
+.empty {
+  padding-left: 15px;
+}
+
+.card {
+  margin: 20px 0;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+  height: 100px;
+  padding: 10px 20px;
+
+  color: $white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+  a {
+
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+}
+
+.cardImg {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+
+  img {
+    width: 100px;
+
+    border: 3px solid $white;
+    border-radius: 50%;
+  }
+}
+
+.body {
+    margin-top: 60px;
+    padding: 10px 20px;
+}
+
+.topContent {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+
+  font-size: em(14);
+
+  strong {
+
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.bottomContent {
+  margin-top: 30px;
+
+  li {
+    padding: 3px 0;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}

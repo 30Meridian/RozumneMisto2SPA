@@ -1,0 +1,29 @@
+
+
+// LIBRARIES AND COMPONENTS
+
+
+@import 'libraries/semantic.scss'; // SEMANTIC STYLES
+@import 'libraries/awesome.scss'; // FONT AWESOME STYLES
+@import 'libraries/bootstrap-grid.scss'; // BOOTSTRAP STYLES
+@import 'components/map.scss'; // STYLES FOR MAP
+@import 'pages/admin.scss'; // STYLES FOR ADMIN PAGE
+@import 'libraries/builder.scss'; // STYLES FOR BUILDER COMPONENTS
+@import 'components/weather.scss'; // STYLES FOR WEATHER
+@import 'components/typography.scss'; // TYPOGRAPHY STYLES (HEADS, PARAGRAPHS, ETC)
+@import 'components/buttons.scss'; // BUTTONS STYLES
+@import 'components/box.scss'; // BOX STYLES
+@import 'components/pagination.scss'; // PAGINATION STYLES
+@import 'components/hexagon.scss'; // HEXAGON STYLES
+
+
+// PAGES
+
+@import 'pages/open-budget.scss';
+
+
+// MAIN STYLES
+
+@import 'styles.scss';  // MAIN STYLES
+@import 'landing.scss';  // LANDING STYLES
+@import 'responsive.scss'; // RESPONSIVE STYLES

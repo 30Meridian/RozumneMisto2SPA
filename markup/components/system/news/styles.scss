@@ -1,0 +1,194 @@
+@import "markup/assets/scss/vars.scss";
+@import "markup/assets/scss/mixins.scss";
+
+.news {
+  margin-top: 30px;
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+}
+
+.newsItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  padding: 10px;
+
+  margin-top: 30px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+.newsLink {
+  color: $green;
+  text-decoration:underline;
+  text-decoration-style: dotted
+}
+
+.singleImg {
+
+  img {
+    width: 80px;
+  }
+}
+
+.newsContent {
+  overflow: hidden;
+
+  width: 100%;
+  margin-left: 15px;
+}
+
+.newsHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsText {
+  width: 630px;
+
+  word-wrap: break-word;
+
+  line-height: 20px;
+}
+
+.newsTime {
+  display: inline;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+
+  padding: .2em .6em .3em;
+
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+
+  color: $green;
+  border-radius: 10px;
+  background: #fff;
+
+  font-size: 90%;
+  font-weight: 500;
+  line-height: 16px;
+  border: 1px solid $green;
+
+  i {
+    margin-right: 4px;
+  }
+
+}
+
+.meta {
+  margin: 10px 0;
+
+  opacity: .8;
+
+  font-size: em(12);
+
+  ul {
+    display: flex;
+  }
+
+  li {
+
+    &:nth-child(2) {
+      margin-left: 10px;
+    }
+  }
+
+  i {
+    margin-right: 4px;
+  }
+}
+
+.img {
+
+  img {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+.content {
+
+  p {
+    text-align: justify;
+    word-wrap: break-word;
+  }
+}
+
+.head {
+
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
+.newsBlock {
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  .newsItem {
+    flex-direction: column;
+
+    padding: 10px;
+
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .newsContent {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .newsHead {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .newsTime {
+    align-self: flex-start;
+  }
+
+  .meta {
+
+     ul {
+      flex-direction: column;
+    }
+
+    li {
+      &:nth-child(2) {
+        margin-top: 5px;
+        margin-left: 0;
+      }
+    }
+  }
+}

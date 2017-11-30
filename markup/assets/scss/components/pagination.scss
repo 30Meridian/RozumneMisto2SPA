@@ -1,0 +1,66 @@
+.pagination {
+
+  a {
+
+  }
+  a.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #999;
+  }
+
+  .active {
+    background-color: $green;
+    border-color: #ddd;
+    color: $white;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+
+    &:hover, &:focus {
+      background-color: $green;
+      border-color: #ddd;
+      color: $white;
+      box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.pagination-active {
+  background-color: #000;
+}
+
+.pagination {
+  display: flex;
+}
+
+.pagination > li > a {
+      border: 0;
+    border-radius: 30px !important;
+    transition: all .3s;
+    padding: 0px 11px;
+    margin: 0 3px;
+    min-width: 37px;
+    text-align: center;
+    height: 37px;
+    line-height: 37px;
+    color: #2c2c2c;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.pagination > li > a, .pagination > li > span {
+  color: $green;
+  @media screen and (max-width: 375px) {
+    padding: 7px;
+  }
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: $green;
+}
+
+.pagination > li > a:focus {
+    color: $green;
+    background-color: #fff;
+}

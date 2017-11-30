@@ -1,0 +1,209 @@
+// @import "markup/assets/scss/vars.scss";
+// @import "markup/assets/scss/mixins.scss";
+//
+// .topMenu {
+//   position: relative;
+//   font-family: "PT Sans Narrow", sans-serif;
+// }
+//
+// .leftMenu {
+//   display: flex;
+//   align-items: center;
+// }
+//
+//
+// .fontsWrap {
+//   display: flex;
+//   align-items: center;
+//   font-size: em(18);
+//   color: $white;
+//
+//   div {
+//     cursor: pointer;
+//   }
+//
+//   div:first-child {
+//     margin-right: 8px;
+//     position: relative;
+//
+//     &:before {
+//       content: '|';
+//       position: absolute;
+//       top: 0;
+//       right: -6px;
+//     }
+//   }
+// }
+//
+// .weather {
+//   text-transform: uppercase;
+//   display: flex;
+//   align-items: center;
+//   font-size: em(16);
+//   height: 53px;
+// }
+//
+// .weather > span {
+//   line-height: 38px;
+// }
+//
+// .tabs {
+//   line-height: 30px;
+//   float: right !important;
+// }
+//
+// .tabsList {
+//   list-style-type: none;
+//   padding: 0;
+//   margin: 0;
+//   display: flex;
+// }
+//
+// .tabsItem {
+//   display: inline-block;
+//   padding: 1px 15px;
+//   background-color: $green;
+//   border-top-left-radius: 5px;
+//   border-top-right-radius: 5px;
+//   border: 1px solid $white;
+//   border-bottom: 0;
+//   margin-left: -1px;
+//   min-height: 35px;
+//
+//   &:first-child {
+//     margin-left: 0;
+//   }
+//
+//   &:last-child {
+//     border-right: 0;
+//   }
+// }
+//
+//
+// .tabsLink {
+//   color: $white;
+//   text-decoration: none;
+//   -webkit-transition: all .35s linear;
+//   transition: all .35s linear;
+//
+//   i {
+//     margin-right: 4px;
+//   }
+//
+//   &:hover, &:focus {
+//     color: $white;
+//     text-decoration: none;
+//   }
+// }
+//
+// .tabActive {
+//
+//   a {
+//     border-bottom: 1px dashed $white;
+//   }
+// }
+//
+// .toggleMenu {
+//
+//   input {
+//     height: 80%;
+//     border-radius: 3px;
+//     border: 0;
+//     outline: 0;
+//     padding: 3px 15px 3px 6px;
+//   }
+//
+//   i {
+//     padding-left: 6px;
+//     color: $white;
+//     cursor: pointer;
+//   }
+// }
+//
+// .searchMenu {
+//   display: flex;
+//   align-items: center;
+// }
+//
+// .topForm {
+//   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+//     color: #333;
+//     font-size: 14px;
+//   }
+//   ::-moz-placeholder { /* Firefox 19+ */
+//     color: #333;
+//     font-size: 14px;
+//   }
+//   :-ms-input-placeholder { /* IE 10+ */
+//     color: #333;
+//     font-size: 14px;
+//   }
+//   :-moz-placeholder { /* Firefox 18- */
+//     color: #333;
+//     font-size: 14px;
+// }
+//   label {
+//     display: none;
+//   }
+//   ul {
+//     position: absolute;
+//     z-index: 10;
+//     background: #fff;
+//     box-shadow: 0.1rem 0.1rem 3rem rgba(0,0,0,.25);
+//   }
+//
+//   li {
+//     padding: 1px 4px;
+//     border-bottom: 1px solid #000;
+//     cursor: pointer;
+//     outline: none;
+//
+//     @media screen and (max-width: 768px) {
+//       padding: 8px 4px;
+//     }
+//
+//     &:hover {
+//       color: $green;
+//       transition: color .15s linear;
+//     }
+//
+//     &:focus {
+//       color: $green;
+//       transition: color .15s linear;
+//     }
+//
+//     &:last-child {
+//       border-bottom: 0;
+//     }
+//   }
+//
+//    input:focus {
+//     background-color: #fff !important;
+//   }
+//
+//   .form-control-search {
+//
+//   }
+// }
+//
+// .topForm > div {
+//   margin: 3px;
+// }
+//
+// @media screen and (max-width: 992px) {
+//   .leftMenu {
+//     justify-content: flex-end;
+//   }
+// }
+//
+// @media screen and (min-width: 480px) and (max-width: 600px) {
+//   .tabsLink {
+//     font-size: 13px;
+//   }
+// }
+//
+// @media screen and (max-width: 768px) {
+//   .tabs {
+//     display: none;
+//   }
+// }

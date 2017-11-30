@@ -1,0 +1,61 @@
+@import "markup/assets/scss/vars.scss";
+
+.content {
+    float: left;
+
+    width: 100%;
+}
+
+.contentBox {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 91px);
+  margin-bottom: -100%;
+  padding: 20px;
+  padding-bottom: 100%;
+
+  background-color: #ecf0f5;
+  word-break: break-word;
+}
+
+.row {
+  overflow: hidden;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media screen and (max-width: 480px) {
+  .contentBox {
+    padding: 10px 0;
+    padding-bottom: 100%;
+  }
+}
+
+.searchHeader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.typeFilter {
+	display: flex;
+	align-items: center;
+	margin: 15px auto 0;
+}
+
+.inputWrap {
+	div {
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+	}
+
+	label {
+		display: none;
+	}
+
+	input {
+		min-width: 400px;
+		margin-right: 10px;
+	}
+}
